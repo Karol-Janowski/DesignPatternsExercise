@@ -1,4 +1,4 @@
-package pl.zajavka.abstractFactory;
+package pl.zajavka.creationalDesignPatterns.abstractFactory;
 
 public class Main {
     public static void main(String[] args) {

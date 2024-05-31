@@ -1,4 +1,4 @@
-package pl.zajavka.factory;
+package pl.zajavka.creationalDesignPatterns.factory;
 
 public class Main {
 

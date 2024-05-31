@@ -1,4 +1,4 @@
-package pl.zajavka.abstractFactory;
+package pl.zajavka.creationalDesignPatterns.abstractFactory;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package pl.zajavka.singleton;
+package pl.zajavka.creationalDesignPatterns.singleton;
 
 public class LazyInitializationSingleton {
 

@@ -1,6 +1,6 @@
-package pl.zajavka.abstractFactory;
+package pl.zajavka.creationalDesignPatterns.abstractFactory;
 
-import pl.zajavka.factory.Pizza;
+import pl.zajavka.creationalDesignPatterns.factory.Pizza;
 
 public class HawaiianPizza implements Pizza {
     @Override

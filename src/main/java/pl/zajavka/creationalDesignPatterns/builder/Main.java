@@ -1,4 +1,4 @@
-package pl.zajavka.builder;
+package pl.zajavka.creationalDesignPatterns.builder;
 
 public class Main {
     public static void main(String[] args) {

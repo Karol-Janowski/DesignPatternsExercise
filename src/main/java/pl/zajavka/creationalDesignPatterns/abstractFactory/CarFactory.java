@@ -1,6 +1,4 @@
-package pl.zajavka.abstractFactory;
-
-import pl.zajavka.factory.PepperoniPizza;
+package pl.zajavka.creationalDesignPatterns.abstractFactory;
 
 import java.util.HashMap;
 import java.util.Map;

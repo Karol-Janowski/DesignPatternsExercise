@@ -1,11 +1,11 @@
-package pl.zajavka.abstractFactory;
+package pl.zajavka.creationalDesignPatterns.factory;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 import java.util.function.Supplier;
 
-public class PizzaFactory implements AbstractFactory<Pizza> {
+public class PizzaFactory {
 
     private static final Map<String, Supplier<Pizza>> PIZZA_MAP = new HashMap<>();
 
@@ -14,7 +14,7 @@ public class PizzaFactory implements AbstractFactory<Pizza> {
         PIZZA_MAP.put("Hawaiian", PepperoniPizza::new);
     }
 
-    public Pizza create(final String whatPizza) {
+    public static Pizza preparePizza(final String whatPizza) {
         return Optional.ofNullable(PIZZA_MAP.get(whatPizza))
                 .map(Supplier::get)
                 .orElseThrow(() -> new RuntimeException(String.format("Sorry, we dont sell: [%s]", whatPizza)));

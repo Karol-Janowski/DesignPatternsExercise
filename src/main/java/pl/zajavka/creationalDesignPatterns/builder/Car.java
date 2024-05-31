@@ -1,4 +1,4 @@
-package pl.zajavka.builder;
+package pl.zajavka.creationalDesignPatterns.builder;
 
 import lombok.ToString;
 
