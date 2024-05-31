@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>pl.zajavka</groupId>
-    <artifactId>mortgage-calculator-uml-diagram</artifactId>
+    <artifactId>DesignPatternsExercise</artifactId>
     <version>1.0.0</version>
 
     <properties>

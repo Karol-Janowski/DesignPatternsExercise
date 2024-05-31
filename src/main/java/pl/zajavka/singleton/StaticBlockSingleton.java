@@ -1,4 +1,4 @@
-package pl.zajavka.Singleton;
+package pl.zajavka.singleton;
 
 public class StaticBlockSingleton {
 

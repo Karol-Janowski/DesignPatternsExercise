@@ -1,4 +1,4 @@
-package pl.zajavka.Factory;
+package pl.zajavka.factory;
 
 public class Main {
 

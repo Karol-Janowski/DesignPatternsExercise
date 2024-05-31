@@ -12,4 +12,8 @@ public class Main {
     Builder
     Prototype
     */
+
+    public static void main(String[] args) {
+
+    }
 }
