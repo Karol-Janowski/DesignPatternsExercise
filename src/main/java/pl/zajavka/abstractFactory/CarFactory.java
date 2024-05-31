@@ -17,9 +17,9 @@ public class CarFactory implements AbstractFactory<Car>{
         PIZZA_MAP.put("Cabriolet", Cabriolet::new);
     }
 
-    public Car create(final String whatPizza) {
-        return (Car) Optional.ofNullable(PIZZA_MAP.get(whatPizza))
+    public Car create(final String whatCar) {
+        return (Car) Optional.ofNullable(PIZZA_MAP.get(whatCar))
                 .map(Supplier::get)
-                .orElseThrow(() -> new RuntimeException(String.format("Sorry, we dont sell: [%s]", whatPizza)));
+                .orElseThrow(() -> new RuntimeException(String.format("Sorry, we dont sell: [%s]", whatCar)));
     }
 }
