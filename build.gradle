@@ -23,6 +23,9 @@ dependencies {
 
     testCompileOnly 'org.projectlombok:lombok:1.18.22'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
+
+    // https://mvnrepository.com/artifact/net.sourceforge.plantuml/plantuml
+    implementation group: 'net.sourceforge.plantuml', name: 'plantuml', version: '8059'
 }
 
 test {
