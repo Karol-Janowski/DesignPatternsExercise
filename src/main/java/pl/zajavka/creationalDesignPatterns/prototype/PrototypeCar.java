@@ -1,4 +1,4 @@
-package pl.zajavka.creationalDesignPatterns.Prototype;
+package pl.zajavka.creationalDesignPatterns.prototype;
 
 import lombok.Data;
 
