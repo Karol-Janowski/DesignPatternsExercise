@@ -24,8 +24,13 @@ public class PrototypeCar implements Cloneable {
 
     }
     @Override
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
+    protected PrototypeCar clone() throws CloneNotSupportedException {
+        final PrototypeCar cloned = (PrototypeCar) super.clone();
+        cloned.brand = brand;
+        cloned.model = model;
+        cloned.steeringWheel = this.steeringWheel.clone();
+        cloned.doors = new ArrayList<>(this.doors);
+        return cloned;
     }
 
     //    public PrototypeCar shallowCopy() {
