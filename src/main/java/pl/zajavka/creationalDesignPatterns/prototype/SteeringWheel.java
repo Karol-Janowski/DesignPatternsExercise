@@ -20,8 +20,7 @@ public class SteeringWheel implements Cloneable{
     @Override
     public SteeringWheel clone() {
         try {
-            SteeringWheel clone = (SteeringWheel) super.clone();
-            return clone;
+            return (SteeringWheel) super.clone();
         } catch (CloneNotSupportedException e) {
             throw new AssertionError();
         }
