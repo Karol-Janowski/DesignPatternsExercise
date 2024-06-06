@@ -1,12 +1,17 @@
 package pl.zajavka.creationalDesignPatterns.prototype;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.With;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 @Data
+@Builder(toBuilder = true)
+@AllArgsConstructor
 public class PrototypeCar implements Cloneable {
 
     // shallow copy
@@ -23,6 +28,7 @@ public class PrototypeCar implements Cloneable {
         this.doors = new ArrayList<>(Arrays.asList("lf", "rf", "lr", "rr"));
 
     }
+
     @Override
     protected PrototypeCar clone() throws CloneNotSupportedException {
         final PrototypeCar cloned = (PrototypeCar) super.clone();
@@ -33,14 +39,16 @@ public class PrototypeCar implements Cloneable {
         return cloned;
     }
 
-    //    public PrototypeCar shallowCopy() {
-//        var newCar = new PrototypeCar();
-//        newCar.steeringWheel = steeringWheel;
-//        return newCar;
-//    }
-//    public PrototypeCar deepCopy() {
-//        var newCar = new PrototypeCar();
-//        newCar.steeringWheel = this.steeringWheel.deepCopy();
-//        return newCar;
-//    }
+    /*
+     public PrototypeCar shallowCopy() {
+         var newCar = new PrototypeCar();
+         newCar.steeringWheel = steeringWheel;
+         return newCar;
+     }
+     public PrototypeCar deepCopy() {
+         var newCar = new PrototypeCar();
+         newCar.steeringWheel = this.steeringWheel.deepCopy();
+         return newCar;
+     }
+    */
 }

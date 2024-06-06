@@ -2,16 +2,24 @@ package pl.zajavka.creationalDesignPatterns.prototype;
 
 import lombok.SneakyThrows;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     @SneakyThrows
     public static void main(String[] args) {
         //prototype
 
         PrototypeCar original = new PrototypeCar();
-        System.out.println(original);
 
-        PrototypeCar cloned = original.clone();
-        System.out.println(cloned);
+        System.out.println("Original before: " + original);
+
+        // lombok builder toBuild = True example (shallow copy)
+        List<String> doorsNew = new ArrayList<>(original.getDoors());
+        doorsNew.add("back door");
+        PrototypeCar cloned = original.toBuilder()
+                        .doors(doorsNew)
+                        .build();
 
         System.out.println(original == cloned);
         System.out.println(original.getSteeringWheel() == cloned.getSteeringWheel());
