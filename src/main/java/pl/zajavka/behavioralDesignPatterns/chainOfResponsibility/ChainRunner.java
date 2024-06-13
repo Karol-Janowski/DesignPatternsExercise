@@ -21,9 +21,11 @@ public class ChainRunner {
     }
 
     public static void main(String[] args) {
-        ChainRunner chainRunner = new ChainRunner();
+//        ChainRunner chainRunner = new ChainRunner();
 //        chainRunner.carHandler.handle(Car.of(Car.Type.CABRIOLET, "Blue", List.of("steering wheel")));
-        chainRunner.carHandler.handle(Car.of(Car.Type.JEEP, "Black", List.of("Wheels")));
+//        chainRunner.carHandler.handle(Car.of(Car.Type.JEEP, "Black", List.of("Wheels")));
 //        chainRunner.carHandler.handle(Car.of(Car.Type.CABRIOLET, "Red", null));
+
+        // implementacja generyczna
     }
 }
